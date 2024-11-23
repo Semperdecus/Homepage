@@ -4,6 +4,8 @@ Website build using:
 - [Tailwind](https://tailwindcss.com/) v3.x
 - Netlify
 
+(in recordtime, don't expect pretty code)
+
 ### Setting Up Locally
 
 If you're doing it locally, start with clicking the [use this template](https://github.com/netlify-templates/nextjs-blog-theme/generate) button on GitHub. This will create a new repository with this template's files on your GitHub account. Once that is done, clone your new repository and navigate to it in your terminal.
