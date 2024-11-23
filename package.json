@@ -25,7 +25,9 @@
     "@emotion/styled": "^11.13.5",
     "@mapbox/rehype-prism": "^0.9.0",
     "@mui/x-charts": "^7.22.2",
+    "@mui/x-charts-pro": "^7.22.3",
     "@tailwindcss/typography": "^0.5.12",
+    "apexcharts": "^4.0.0",
     "chance": "^1.1.12",
     "classnames": "^2.3.1",
     "date-fns": "^4.1.0",
@@ -36,6 +38,7 @@
     "papaparse": "^5.4.1",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.6.0",
     "react-dom": "^18.2.0",
     "remark-gfm": "^4.0.0"
   },
