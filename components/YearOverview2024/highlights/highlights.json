@@ -4,41 +4,47 @@
     "imageSrc": "/images/2024/highlightFotos/7jan.jpeg",
     "text": "Schaatsen brabanthallen, makkers, poffertjes, \"ik haat je\" ruzie met Ting om 2u snachts",
     "position": 1,
-    "impact": 4
+    "impact": 4,
+    "mood": 3
   },
   {
     "date": "2024-01-07",
     "imageSrc": "/images/2024/highlightFotos/7jan.jpeg",
     "text": "Schaatsen brabanthallen, makkers, poffertjes, \"ik haat je\" ruzie met Ting om 2u snachts",
     "position": 1,
-    "impact": 4
+    "impact": 4,
+    "mood": 3
   },
   {
     "date": "2024-02-09",
     "imageSrc": "/images/2024/highlightFotos/9feb.jpeg",
     "text": "3 dronken dagen carnaval, Lennie, padel",
     "position": 1,
-    "impact": 5
+    "impact": 5,
+    "mood": 4
   },
   {
     "date": "2024-03-08",
     "imageSrc": "/images/2024/highlightFotos/9maart.jpeg",
     "text": "Skireis, Timothy: \"Zedde gij nog wakker?\", \"put the bar on fire\", de random cloud engineers, Melissa in Brussel",
     "position": 1,
-    "impact": 2
+    "impact": 2,
+    "mood": 3
   },
   {
     "date": "2024-03-23",
     "imageSrc": "/images/2024/highlightFotos/23maart.jpeg",
-    "text": "Vrijdag game night, gourmetten, uitgaan, frustraties, verdriet, confusion",
+    "text": "Vrijdag game night kantoor, zaterdag met makkers gourmetten, uitgaan, frustraties, verdriet, confusion",
     "position": 2,
-    "impact": 3
+    "impact": 3,
+    "mood": 3
   },
   {
     "date": "2024-04-07",
     "imageSrc": "/images/2024/highlightFotos/7april.png",
     "text": "Survival run bathmen, zonnig, sportief",
     "position": 1,
-    "impact": 4
+    "impact": 4,
+    "mood": 5
   }
 ]

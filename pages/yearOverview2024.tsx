@@ -36,7 +36,6 @@ export default function Index({globalData}) {
       }}>
         <MoodLegend/>
         <MoodChart data={moodData}/>
-        {/*3 rows: top = 250, 7 dagen = 50 pixels = 7 pixels per dag*/}
         <div style={{position: "absolute", top: "250px", left: "42px"}}>
 
           {highlightData.map((highlight, index) => (
@@ -46,6 +45,8 @@ export default function Index({globalData}) {
               text={highlight.text}
               date={highlight.date}
               position={highlight.position}
+              impact={highlight.impact}
+              mood={highlight.mood}
             />
           ))}
         </div>

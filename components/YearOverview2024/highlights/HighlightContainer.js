@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
+import {moodIcons} from "../MoodLegend";
 
-const HighlightContainer = ({imageSrc, text, date, position}) => {
+const HighlightContainer = ({imageSrc, text, date, position, impact, mood}) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   useEffect(() => {
@@ -38,7 +39,6 @@ const HighlightContainer = ({imageSrc, text, date, position}) => {
   };
   const commonStyle = {
     position: 'absolute',
-    left: '10px',
     fontSize: '13px',
     color: 'white',
     opacity: isHovered ? 1 : 0,
@@ -50,14 +50,23 @@ const HighlightContainer = ({imageSrc, text, date, position}) => {
 
   const textStyle = {
     ...commonStyle,
+    left: '10px',
+    marginRight: '5px',
     top: '50px',
     fontWeight: 300,
   };
 
   const dateStyle = {
     ...commonStyle,
-    top: '20px',
+    left: '10px',
+    top: '18px',
     fontWeight: 800,
+  };
+  const iconStyle = {
+    ...commonStyle,
+    top: '15px',
+    right: '10px',
+    minWidth: "30px",
   };
 
   return (
@@ -67,6 +76,7 @@ const HighlightContainer = ({imageSrc, text, date, position}) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       {imageSrc && <img src={imageSrc} alt="highlighted" style={imageStyle}/>}
+      <div style={iconStyle}>{moodIcons[mood]}</div>
       <div style={dateStyle}>{new Intl.DateTimeFormat('nl-NL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(date))}</div>
       <div style={textStyle}>{text}</div>
     </div>

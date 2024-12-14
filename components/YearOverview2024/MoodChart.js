@@ -40,7 +40,7 @@ const monthlyAnnotations = (data) => data.reduce((annotations, entry, index) => 
       type: "line",
       xMin: entry.date,
       xMax: entry.date,
-      borderColor: "rgba(0, 0, 0, 0.7)", // Line color
+      borderColor: "rgb(51,51,51)", // Line color
       borderWidth: 1,
       borderDash: [3, 5], // Dotted line (px dash, px space)
       label: {
