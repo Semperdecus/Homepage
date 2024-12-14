@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
-import { ChartsXAxis, ChartsYAxis, ResponsiveChartContainer, ScatterPlot } from "@mui/x-charts";
-import { Slider } from "@mui/material";
+import {ChartsXAxis, ChartsYAxis, ResponsiveChartContainer, ScatterPlot} from "@mui/x-charts";
+import {Slider} from "@mui/material";
 
 interface DaylioResponsiveChartProps {
   data: any;
   moodLabels: Record<number, string>;
 }
 
-const DaylioResponsiveChart: React.FC<DaylioResponsiveChartProps> = ({ data, moodLabels }) => {
+const DaylioResponsiveChart: React.FC<DaylioResponsiveChartProps> = ({data, moodLabels}) => {
   const [xLimits, setXLimits] = useState<[number, number]>([1542231720000, 1737289680000]);  // Initialize with valid timestamps
   const handleChange = (
     event: Event,
@@ -39,6 +39,8 @@ const DaylioResponsiveChart: React.FC<DaylioResponsiveChartProps> = ({ data, moo
 
   return (
     <div>
+      {/*{data.map((point, index) => console.log(point))}*/}
+
       <ResponsiveChartContainer
         xAxis={[
           {
@@ -48,7 +50,7 @@ const DaylioResponsiveChart: React.FC<DaylioResponsiveChartProps> = ({ data, moo
             disableLine: true,
             valueFormatter: (time) => {
               const date = new Date(time);
-              const options = { month: 'short', year: 'numeric' };
+              const options = {month: 'short', year: 'numeric'};
               // @ts-ignore
               return date.toLocaleDateString('en-US', options);
             },
@@ -64,7 +66,7 @@ const DaylioResponsiveChart: React.FC<DaylioResponsiveChartProps> = ({ data, moo
           },
         ]}
         series={[
-          { type: 'scatter', data },
+          {type: 'scatter', data},
           {
             type: 'line',
             data: data.map(obj => obj.y),
@@ -73,9 +75,7 @@ const DaylioResponsiveChart: React.FC<DaylioResponsiveChartProps> = ({ data, moo
         ]}
         height={500}
       >
-        <g>
-          <ScatterPlot />
-        </g>
+        <ScatterPlot />
         <ChartsXAxis
           disableTicks
           tickLabelStyle={{
@@ -83,7 +83,7 @@ const DaylioResponsiveChart: React.FC<DaylioResponsiveChartProps> = ({ data, moo
             angle: -45,
           }}
         />
-        <ChartsYAxis disableTicks />
+        <ChartsYAxis disableTicks/>
       </ResponsiveChartContainer>
 
       <Slider
@@ -92,7 +92,7 @@ const DaylioResponsiveChart: React.FC<DaylioResponsiveChartProps> = ({ data, moo
         valueLabelDisplay="off"
         min={new Date(2018, 6, 1).getTime()}
         max={new Date(2025, 0, 1).getTime()}
-        sx={{ mt: 2 }}
+        sx={{mt: 2}}
       />
     </div>
   );
