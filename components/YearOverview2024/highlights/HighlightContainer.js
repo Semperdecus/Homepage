@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {moodIcons} from "../MoodLegend";
 
-const HighlightContainer = ({imageSrc, text, date, position, impact, mood}) => {
+const HighlightContainer = ({imageSrc, text, date, position, mood}) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   useEffect(() => {
@@ -28,6 +28,7 @@ const HighlightContainer = ({imageSrc, text, date, position, impact, mood}) => {
     opacity: isVisible ? 1 : 0, // Fade-in effect
     transform: isVisible ? 'translateY(0)' : 'translateY(10px)', // Move into place
     transition: 'opacity 0.1s ease, transform 0.5s ease', // Transition effect
+    borderRadius: '0px 5px 5px 5px',
   };
 
   const imageStyle = {
@@ -36,6 +37,7 @@ const HighlightContainer = ({imageSrc, text, date, position, impact, mood}) => {
     objectFit: 'cover',
     opacity: isHovered ? 0.3 : 1,
     transition: 'opacity 0.1s ease',
+    borderRadius: '0px 5px 5px 5px',
   };
   const commonStyle = {
     position: 'absolute',

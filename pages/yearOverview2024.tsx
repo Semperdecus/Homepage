@@ -5,8 +5,9 @@ import {fetchAndParseCsv} from "../utils/csvUtil";
 import {processMoodData} from "../utils/daylioUtil";
 import MoodChart from "../components/YearOverview2024/MoodChart";
 import {MoodLegend} from "../components/YearOverview2024/MoodLegend";
-import HighlightContainer from "../components/YearOverview2024/highlights/HighlightContainer";
 import highlightData from '../components/YearOverview2024/highlights/highlights.json';
+import HighlightContainer from "../components/YearOverview2024/highlights/HighlightContainer";
+import HighlightOptions from "../components/YearOverview2024/highlights/HighlightOptions";
 
 export default function Index({globalData}) {
   const [moodData, setMoodData] = useState<{ date: string; moodScore: number }[]>([]);
@@ -36,24 +37,24 @@ export default function Index({globalData}) {
       }}>
         <MoodLegend/>
         <MoodChart data={moodData}/>
+        <HighlightOptions impact={1}/>
         <div style={{position: "absolute", top: "250px", left: "42px"}}>
           {highlightData.map((highlight, index) => (
             <HighlightContainer
-              key={index} // Ensure each element has a unique key
+              key={index}
               imageSrc={highlight.imageSrc}
               text={highlight.text}
               date={highlight.date}
               position={highlight.position}
-              impact={highlight.impact}
-              mood={highlight.mood}
-            />
+              mood={highlight.mood}/>
           ))}
         </div>
 
         {/*  here I put sections for each month overview */}
       </div>
     </main>
-  );
+  )
+    ;
 }
 
 export function getStaticProps() {

@@ -120,11 +120,43 @@
     "mood": 3
   },
   {
-    "date": "2024-10-04",
-    "imageSrc": "/images/2024/highlightFotos/4oct.jpeg",
-    "text": "Van moll, ik was ge",
+    "date": "2024-10-03",
+    "imageSrc": "/images/2024/highlightFotos/3okt2.jpeg",
+    "text": "Van moll, ik was fit, gezellig met collegas en Manon, hondjes aaien, veel gelachen en lekker bier",
     "position": 2,
-    "impact": 3,
+    "impact": 2,
+    "mood": 5
+  },
+  {
+    "date": "2024-10-19",
+    "imageSrc": "/images/2024/highlightFotos/20oktober.jpeg",
+    "text": "Hong Kong en Japan. Zo veel gezien en meegemaakt. Soms mezelf tegengekomen tijdens alleen reizen maar heb nonstop genoten.",
+    "position": 1,
+    "impact": 5,
+    "mood": 5
+  },
+  {
+    "date": "2024-11-29",
+    "imageSrc": "/images/2024/highlightFotos/29nov.jpeg",
+    "text": "VrijmiMAHJONG EN VrijmiJAMBOREE. Heel gezellige avond",
+    "position": 1,
+    "impact": 2,
+    "mood": 4
+  },
+  {
+    "date": "2024-12-03",
+    "imageSrc": "/images/2024/highlightFotos/3dec.jpeg",
+    "text": "Hele leuke Van Moll pubquiz en hand gebroken. Ff dipje maar tegenslag goed opgepakt.",
+    "position": 2,
+    "impact": 4,
+    "mood": 3
+  },
+  {
+    "date": "2024-12-12",
+    "imageSrc": "/images/2024/highlightFotos/12dec.jpeg",
+    "text": "Geweldige Eurovision en beetje rustige kerstborrel. Geen voetbal stapavond op zaterdag want ben te lekker aan het hobbyen.",
+    "position": 3,
+    "impact": 2,
     "mood": 4
   }
 ]
