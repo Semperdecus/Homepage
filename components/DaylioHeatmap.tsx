@@ -72,7 +72,7 @@ const DaylioHeatmap: React.FC<DaylioHeatmapProps> = ({ data }) => {
 
   return (
     <div>
-      <ReactApexChart options={options} series={data} type="heatmap" />
+      {/*<ReactApexChart options={options} series={data} type="heatmap" />*/}
     </div>
   );
 };
