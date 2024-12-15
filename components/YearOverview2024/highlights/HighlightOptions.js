@@ -7,7 +7,7 @@ const HighlightOptions = ({impact}) => {
     background: "#555555",
     width: '250px',
     height: '50px',
-    left: 20,
+    right: 20,
     bottom: 20,
     zIndex: 999,
   };

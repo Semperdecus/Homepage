@@ -16,7 +16,6 @@ const highlightAnnotations = (data) => data.reduce((annotations, entry, index) =
           type: "line",
           xMin: entry.date,
           xMax: entry.date,
-          // yMin: - highlight.position * 5,
           yMin: highlight.position * -4.5,
           borderColor: "rgba(255, 255, 255, 0.7)", // White line for highlighted dates
           borderWidth: 2,
@@ -29,7 +28,7 @@ const highlightAnnotations = (data) => data.reduce((annotations, entry, index) =
   return annotations;
 }, []);
 
-// Create an array of annotations for the start of each month
+// Create an array of lines for the start of each month
 const monthlyAnnotations = (data) => data.reduce((annotations, entry, index) => {
   const currentDate = new Date(entry.date);
   const currentMonth = currentDate.getMonth(); // Get the current month (0-11)

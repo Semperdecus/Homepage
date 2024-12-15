@@ -8,14 +8,19 @@ const Colors = {
   Awful: "#eb5869"
 };
 
-const MoodLegend = () => {
+
+const MoodLegend = ({ legendStyle = {} }) => {
+  const defaultStyle = {
+    minWidth: "40px",
+    display: "flex",
+    flexDirection: "column",
+    padding: "20px 0px 20px 10px"
+  }
+
+  const mergedStyle = { ...defaultStyle, ...legendStyle };
+
   return (
-    <div style={{
-      minWidth: "40px",
-      display: "flex",
-      flexDirection: "column",
-      padding: "20px 0px 20px 10px"
-    }}>
+    <div className="MoodLegend" style={mergedStyle}>
       <svg
         xmlns="http://www.w3.org/2000/svg" version="1.1"
         viewBox="0 0 1024 1280" style={{fill: Colors.Rad}}

@@ -7,7 +7,7 @@ import MoodChart from "../components/YearOverview2024/MoodChart";
 import {MoodLegend} from "../components/YearOverview2024/MoodLegend";
 import highlightData from '../components/YearOverview2024/highlights/highlights.json';
 import HighlightContainer from "../components/YearOverview2024/highlights/HighlightContainer";
-import HighlightOptions from "../components/YearOverview2024/highlights/HighlightOptions";
+import MoodSummary from "../components/YearOverview2024/MoodSummary";
 
 export default function Index({globalData}) {
   const [moodData, setMoodData] = useState<{ date: string; moodScore: number }[]>([]);
@@ -26,7 +26,7 @@ export default function Index({globalData}) {
   return (
     <main
       className="bg-repeat bg-[length:512px_512px] h-screen overflow-x-auto overflow-y-hidden"
-      style={{background: "#1A1A1A"}}
+      style={{background: "#151515"}}
     >
       <div style={{
         position: "relative",
@@ -37,7 +37,7 @@ export default function Index({globalData}) {
       }}>
         <MoodLegend/>
         <MoodChart data={moodData}/>
-        <HighlightOptions impact={1}/>
+        {/*<HighlightOptions impact={1}/>*/}
         <div style={{position: "absolute", top: "250px", left: "42px"}}>
           {highlightData.map((highlight, index) => (
             <HighlightContainer
@@ -49,12 +49,11 @@ export default function Index({globalData}) {
               mood={highlight.mood}/>
           ))}
         </div>
-
+        <MoodSummary data={moodData} />
         {/*  here I put sections for each month overview */}
       </div>
     </main>
-  )
-    ;
+  );
 }
 
 export function getStaticProps() {

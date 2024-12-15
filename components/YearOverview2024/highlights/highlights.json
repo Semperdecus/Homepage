@@ -2,15 +2,7 @@
   {
     "date": "2024-01-07",
     "imageSrc": "/images/2024/highlightFotos/7jan.jpeg",
-    "text": "Schaatsen brabanthallen, makkers, poffertjes, \"ik haat je\" ruzie met Ting om 2u snachts",
-    "position": 1,
-    "impact": 4,
-    "mood": 3
-  },
-  {
-    "date": "2024-01-07",
-    "imageSrc": "/images/2024/highlightFotos/7jan.jpeg",
-    "text": "Schaatsen brabanthallen, makkers, poffertjes, \"ik haat je\" ruzie met Ting om 2u snachts",
+    "text": "Schaatsen brabanthallen, makkers, poffertjes, \"ik haat je\" ruzie met Ting om 2u snachts 📞",
     "position": 1,
     "impact": 4,
     "mood": 3
@@ -66,17 +58,9 @@
   {
     "date": "2024-05-19",
     "imageSrc": "/images/2024/highlightFotos/19mei.jpeg",
-    "text": "Pinkster BBQ. RSMVs, PS5, jack in the box racisme, trackmania. Boys only night",
+    "text": "Pinkster BBQ. RSMVs, PS5, jack in the box racisme, trackmania. Boys only night. Dag erna wijnfeest ook leuk.",
     "position": 1,
     "impact": 3,
-    "mood": 4
-  },
-  {
-    "date": "2024-05-20",
-    "imageSrc": "/images/2024/highlightFotos/20mei.jpeg",
-    "text": "Wijn feestje. Zonnig, gezellig, hondjes aaien",
-    "position": 3,
-    "impact": 2,
     "mood": 4
   },
   {
@@ -98,9 +82,9 @@
   {
     "date": "2024-08-15",
     "imageSrc": "/images/2024/highlightFotos/15augustus.jpeg",
-    "text": "Vraai kermis, alle belgen gesproken, padelafspraken, heel gezellig",
+    "text": "Vraai kermis, alle belgen connecties weer gesproken, padelafspraken gemaakt, heel gezellig",
     "position": 1,
-    "impact": 2,
+    "impact": 3,
     "mood": 3
   },
   {
@@ -114,7 +98,7 @@
   {
     "date": "2024-09-14",
     "imageSrc": "/images/2024/highlightFotos/14september.jpeg",
-    "text": "Muziekbingo woensdag, Phantasialand donderdag, lekker dobberen opt water zaterdag. Beetje zwaar want 100% corona positief!",
+    "text": "Muziekbingo woensdag, Phantasialand donderdag, lekker deventer kajakken zaterdag. Beetje zwaar want ik was 100% corona positief!",
     "position": 1,
     "impact": 3,
     "mood": 3
@@ -126,6 +110,14 @@
     "position": 2,
     "impact": 2,
     "mood": 5
+  },
+  {
+    "date": "2024-10-12",
+    "imageSrc": "/images/2024/highlightFotos/12okt.jpeg",
+    "text": "Mushoku Tensei uitgelezen. Fantasy-action-\"coming-of-age\" verhaal met herkenbare struggles. In mei begonnen lezen. Veel impact gehad.",
+    "position": 3,
+    "impact": 3,
+    "mood": 4
   },
   {
     "date": "2024-10-19",
@@ -146,7 +138,7 @@
   {
     "date": "2024-12-03",
     "imageSrc": "/images/2024/highlightFotos/3dec.jpeg",
-    "text": "Hele leuke Van Moll pubquiz en hand gebroken. Ff dipje maar tegenslag goed opgepakt.",
+    "text": "Hele leuke Van Moll pubquiz en hand gebroken. Klein dipje achteraf maar snel goed opgepakt.",
     "position": 2,
     "impact": 4,
     "mood": 3
