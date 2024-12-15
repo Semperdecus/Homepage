@@ -26,9 +26,9 @@
   {
     "date": "2024-03-08",
     "imageSrc": "/images/2024/highlightFotos/9maart.jpeg",
-    "text": "Skireis, Timothy: \"Zedde gij nog wakker?\", \"put the bar on fire\", de random cloud engineers, Melissa in Brussel",
+    "text": "Skireis omslagpunt na zware periode, Timothy: \"Zedde gij nog wakker?\", \"put the bar on fire\", de random cloud engineers, Melissa in Brussel",
     "position": 1,
-    "impact": 2,
+    "impact": 3,
     "mood": 3
   },
   {
@@ -40,11 +40,91 @@
     "mood": 3
   },
   {
+    "date": "2024-03-28",
+    "imageSrc": "/images/2024/highlightFotos/28maart.jpeg",
+    "text": "Tap takeover woensdag, bijlen werpen donderdag (gewonnen), paaspop vrijdag, veel gezelligheid met veel leuke mensen, Jos die stoer doet",
+    "position": 3,
+    "impact": 2,
+    "mood": 4
+  },
+  {
     "date": "2024-04-07",
     "imageSrc": "/images/2024/highlightFotos/7april.png",
-    "text": "Survival run bathmen, zonnig, sportief",
+    "text": "Survival run bathmen, zonnig, sportief, gezellig met Jesse en Femke",
     "position": 1,
     "impact": 4,
     "mood": 5
+  },
+  {
+    "date": "2024-04-27",
+    "imageSrc": "/images/2024/highlightFotos/27april.png",
+    "text": "Koningsdag met Jeffrey, Ting, Eepke, Demain, Kate. Gezellig maar emotioneel zwaar",
+    "position": 2,
+    "impact": 4,
+    "mood": 3
+  },
+  {
+    "date": "2024-05-19",
+    "imageSrc": "/images/2024/highlightFotos/19mei.jpeg",
+    "text": "Pinkster BBQ. RSMVs, PS5, jack in the box racisme, trackmania. Boys only night",
+    "position": 1,
+    "impact": 3,
+    "mood": 4
+  },
+  {
+    "date": "2024-05-20",
+    "imageSrc": "/images/2024/highlightFotos/20mei.jpeg",
+    "text": "Wijn feestje. Zonnig, gezellig, hondjes aaien",
+    "position": 3,
+    "impact": 2,
+    "mood": 4
+  },
+  {
+    "date": "2024-06-15",
+    "imageSrc": "/images/2024/highlightFotos/15juni.png",
+    "text": "Turning point 5 in de zon lezen, deltdag, kevertjes rijden, boot varen, Melissa, Mark en Maikel party taxi",
+    "position": 2,
+    "impact": 2,
+    "mood": 4
+  },
+  {
+    "date": "2024-06-30",
+    "imageSrc": "/images/2024/highlightFotos/30juni.jpeg",
+    "text": "Amerikanen, braverun, quarter pipe geklommen trots op mezelf, bbq achteraf",
+    "position": 1,
+    "impact": 1,
+    "mood": 3
+  },
+  {
+    "date": "2024-08-15",
+    "imageSrc": "/images/2024/highlightFotos/15augustus.jpeg",
+    "text": "Vraai kermis, alle belgen gesproken, padelafspraken, heel gezellig",
+    "position": 1,
+    "impact": 2,
+    "mood": 3
+  },
+  {
+    "date": "2024-09-05",
+    "imageSrc": "/images/2024/highlightFotos/5september.jpeg",
+    "text": "Disneyland Parijs, Summer Seminar, letterlijk tranen van geluk, leuke mensen en zo veel gelachen.",
+    "position": 2,
+    "impact": 5,
+    "mood": 5
+  },
+  {
+    "date": "2024-09-14",
+    "imageSrc": "/images/2024/highlightFotos/14september.jpeg",
+    "text": "Muziekbingo woensdag, Phantasialand donderdag, lekker dobberen opt water zaterdag. Beetje zwaar want 100% corona positief!",
+    "position": 1,
+    "impact": 3,
+    "mood": 3
+  },
+  {
+    "date": "2024-10-04",
+    "imageSrc": "/images/2024/highlightFotos/4oct.jpeg",
+    "text": "Van moll, ik was ge",
+    "position": 2,
+    "impact": 3,
+    "mood": 4
   }
 ]

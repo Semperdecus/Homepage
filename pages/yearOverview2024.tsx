@@ -37,7 +37,6 @@ export default function Index({globalData}) {
         <MoodLegend/>
         <MoodChart data={moodData}/>
         <div style={{position: "absolute", top: "250px", left: "42px"}}>
-
           {highlightData.map((highlight, index) => (
             <HighlightContainer
               key={index} // Ensure each element has a unique key
