@@ -286,4 +286,42 @@ const moodIcons = {
     </svg>
   ),
 };
-export {MoodLegend, Colors, moodIcons};
+
+const getMoodColor = (mood) => {
+  let color;
+
+  switch (mood) {
+    case 1:
+      color = Colors.Awful;
+      break;
+    case 2:
+      color = Colors.Sad;
+      break;
+    case 3:
+      color = Colors.Meh;
+      break;
+    case 4:
+      color = Colors.Good;
+      break;
+    case 5:
+      color = Colors.Rad;
+      break;
+    default:
+      color = '#808080';  // Fallback color
+  }
+
+  return convertHexToRGBA(color, 0.6);
+};
+const convertHexToRGBA = (hex, alpha) => {
+  // Remove the '#' from the hex color
+  hex = hex.replace('#', '');
+
+  // Convert to RGB
+  let r = parseInt(hex.substring(0, 2), 16);
+  let g = parseInt(hex.substring(2, 4), 16);
+  let b = parseInt(hex.substring(4, 6), 16);
+
+  // Return the rgba color with the specified alpha
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+};
+export {MoodLegend, Colors, moodIcons, getMoodColor};

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HighlightOptions = ({impact}) => {
+const Options = ({impact}) => {
   const containerStyle = {
     position: 'fixed',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
@@ -21,4 +21,4 @@ const HighlightOptions = ({impact}) => {
   );
 };
 
-export default HighlightOptions;
+export default Options;

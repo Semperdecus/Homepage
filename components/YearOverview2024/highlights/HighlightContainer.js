@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {moodIcons} from "../MoodLegend";
+import {Colors, getMoodColor, moodIcons} from "../MoodLegend";
 import Image from "next/image";
 
 const HighlightContainer = ({imageSrc, text, date, position, mood}) => {
@@ -15,7 +15,7 @@ const HighlightContainer = ({imageSrc, text, date, position, mood}) => {
     const startOfYear = new Date(targetDate.getFullYear(), 0, 0);
     const diff = targetDate - startOfYear;
     const dayOfYear = Math.floor(diff / (1000 * 60 * 60 * 24));
-    return `${dayOfYear * 9.445}px`; // I got this number through trail-and-error :)
+    return `${dayOfYear * 9.445 + 1}px`; // I got this number through trail-and-error :)
   };
 
   const containerStyle = {
@@ -31,9 +31,9 @@ const HighlightContainer = ({imageSrc, text, date, position, mood}) => {
     transform: isVisible ? 'translateY(0)' : 'translateY(10px)', // Move into place
     transition: 'opacity 0.1s ease, transform 0.5s ease', // Transition effect
     borderRadius: '0px 5px 5px 5px',
-    borderTop: '1px solid #FFFFFF22',
-    borderLeft: '1px solid #FFFFFF22',
-  };
+    borderTop: `1px solid ${getMoodColor(mood)}`,
+    borderLeft: `1px solid ${getMoodColor(mood)}`,
+  }
 
   const imageStyle = {
     width: '100%',

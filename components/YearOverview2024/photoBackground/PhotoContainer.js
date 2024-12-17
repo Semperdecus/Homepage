@@ -11,6 +11,8 @@ const PhotoContainer = ({data}) => {
     padding: 0,
     margin: 0,
     width: '3694px',
+    left: -50,
+    top: -50,
   };
 
   const rotations = useMemo(() => {

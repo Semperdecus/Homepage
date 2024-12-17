@@ -2,7 +2,7 @@ import React from "react";
 import {Line} from "react-chartjs-2";
 import {CategoryScale, Chart as ChartJS, LinearScale, LineElement, PointElement, Title} from "chart.js";
 import annotationPlugin from 'chartjs-plugin-annotation';
-import {Colors} from './MoodLegend';
+import {Colors, getMoodColor} from './MoodLegend';
 import highlightData from './highlights/highlights.json';
 
 ChartJS.register(annotationPlugin, LineElement, PointElement, LinearScale, Title, CategoryScale);
@@ -17,9 +17,8 @@ const highlightAnnotations = (data) => data.reduce((annotations, entry, index) =
           xMin: entry.date,
           xMax: entry.date,
           yMin: highlight.position * -4.5,
-          borderColor: "rgba(255, 255, 255, 0.7)", // White line for highlighted dates
-          borderWidth: 2,
-          borderDash: [2, 4], // Dotted line style
+          borderColor: getMoodColor(highlight.mood),
+          borderWidth: 1,
         });
       }
     })
@@ -39,9 +38,9 @@ const monthlyAnnotations = (data) => data.reduce((annotations, entry, index) => 
       type: "line",
       xMin: entry.date,
       xMax: entry.date,
-      borderColor: "rgb(51,51,51)", // Line color
+      borderColor: "rgba(255, 255, 255, 0.4)",
       borderWidth: 1,
-      borderDash: [3, 5], // Dotted line (px dash, px space)
+      borderDash: [2, 4], // Dotted line (px dash, px space)
       label: {
         position: "center",
         backgroundColor: "rgba(0, 0, 0, 0.7)", // Background color of the label
@@ -105,6 +104,7 @@ export default function MoodChart({data}) {
           maxRotation: 0, // Make sure the ticks are horizontal (no rotation)
           minRotation: 0, // Ensure no rotation on smaller screens
           autoSkip: false,
+          color: 'rgba(255, 255, 255, 0.4)',
         },
         grid: {
           display: false, // Remove grid lines from x-axis

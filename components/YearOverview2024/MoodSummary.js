@@ -12,13 +12,13 @@ const MoodSummary = (data) => {
     position: 'absolute',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
     width: '220px',
-    left: 980,
-    top: 139,
-    zIndex: 999,
+    left: 120,
+    top: 140,
     color: 'rgba(255, 255, 255, 0.5)',
     justifyContent: 'center',
     alignItems: 'center',
     display: 'flex',
+    zIndex: 1,
 };
 
   const [moodCounts, setMoodCounts] = useState(null);
@@ -66,7 +66,7 @@ const MoodSummary = (data) => {
           Colors.Good, // good - green
           Colors.Rad, // rad - blue
         ],
-        borderWidth: 1,
+        borderWidth: 2,
       },
     ],
   };

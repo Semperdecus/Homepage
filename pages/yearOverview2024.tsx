@@ -37,9 +37,10 @@ export default function Index() {
     >
       <div style={{
         position: "relative",
-        margin: "auto",
         height: "864px",
         width: "3294px",
+        left: 30,
+        top: 30,
         display: "flex",
         zIndex: 1,
         pointerEvents: "none",
