@@ -19,7 +19,7 @@ const HighlightContainer = ({imageSrc, text, date, position, mood}) => {
 
   const containerStyle = {
     position: 'absolute',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.2)',
     background: "#121212",
     width: '250px',
     height: '180px',
@@ -29,6 +29,8 @@ const HighlightContainer = ({imageSrc, text, date, position, mood}) => {
     transform: isVisible ? 'translateY(0)' : 'translateY(10px)', // Move into place
     transition: 'opacity 0.1s ease, transform 0.5s ease', // Transition effect
     borderRadius: '0px 5px 5px 5px',
+    borderTop: '1px solid #FFFFFF22',
+    borderLeft: '1px solid #FFFFFF22',
   };
 
   const imageStyle = {
