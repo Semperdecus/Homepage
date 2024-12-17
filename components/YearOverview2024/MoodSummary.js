@@ -8,33 +8,19 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const MoodSummary = (data) => {
   const containerStyle = {
+    pointerEvents: 'auto',
     position: 'absolute',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-    width: '420px',
-    left: 50,
-    bottom: 0,
+    width: '220px',
+    left: 980,
+    top: 139,
     zIndex: 999,
     color: 'rgba(255, 255, 255, 0.5)',
     justifyContent: 'center',
     alignItems: 'center',
     display: 'flex',
-  };
+};
 
-  const containerStyleCounters = {
-    display: 'flex',
-    alignItems: 'flex-start',
-    flexDirection: 'column',
-    marginBlockEnd: '8px',
-    marginLeft: '5px',
-    lineHeight: '38px',
-    justifyContent: 'center',
-  };
-
-  const legendStyle = {
-    padding: '0',
-    opacity: '0.6',
-    flexDirection: 'row',
-  };
   const [moodCounts, setMoodCounts] = useState(null);
 
   // Calculate moodCounts when data changes
@@ -71,7 +57,7 @@ const MoodSummary = (data) => {
     labels: Object.keys(moodCounts), // ['awful', 'bad', 'meh', 'good', 'rad']
     datasets: [
       {
-        label: false,
+        label: true,
         data: Object.values(moodCounts), // [9, 56, 161, 111, 11]
         borderColor: [
           Colors.Awful, // awful - red
@@ -93,7 +79,7 @@ const MoodSummary = (data) => {
       },
       tooltip: {
         enabled: true,
-        displayColors: false, // Hide the color box in the tooltip
+        displayColors: false,
       },
     },
     scales: {

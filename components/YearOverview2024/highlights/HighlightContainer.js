@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {moodIcons} from "../MoodLegend";
+import Image from "next/image";
 
 const HighlightContainer = ({imageSrc, text, date, position, mood}) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,8 +19,9 @@ const HighlightContainer = ({imageSrc, text, date, position, mood}) => {
   };
 
   const containerStyle = {
+    pointerEvents: 'auto',
     position: 'absolute',
-    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.2)',
+    boxShadow: '0 6px 6px rgba(0, 0, 0, 0.2)',
     background: "#121212",
     width: '250px',
     height: '180px',
@@ -79,7 +81,7 @@ const HighlightContainer = ({imageSrc, text, date, position, mood}) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {imageSrc && <img src={imageSrc} alt="highlighted" style={imageStyle}/>}
+      {imageSrc && <Image width={250} height={180} src={imageSrc} alt="highlighted" style={imageStyle}/>}
       <div style={iconStyle}>{moodIcons[mood]}</div>
       <div style={dateStyle}>{new Intl.DateTimeFormat('nl-NL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(date))}</div>
       <div style={textStyle}>{text}</div>

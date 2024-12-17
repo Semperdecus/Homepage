@@ -6,10 +6,13 @@ import {processMoodData} from "../utils/daylioUtil";
 import MoodChart from "../components/YearOverview2024/MoodChart";
 import {MoodLegend} from "../components/YearOverview2024/MoodLegend";
 import highlightData from '../components/YearOverview2024/highlights/highlights.json';
+import photoData from '../components/YearOverview2024/photoBackground/photos.json';
+import photoBackgroundPythonScript from '../components/YearOverview2024/photoBackground/photoBackground.json';
 import HighlightContainer from "../components/YearOverview2024/highlights/HighlightContainer";
 import MoodSummary from "../components/YearOverview2024/MoodSummary";
+import PhotoContainer from "../components/YearOverview2024/photoBackground/PhotoContainer";
 
-export default function Index({globalData}) {
+export default function Index() {
   const [moodData, setMoodData] = useState<{ date: string; moodScore: number }[]>([]);
 
   useEffect(() => {
@@ -23,9 +26,13 @@ export default function Index({globalData}) {
       .catch((error: any) => console.error("Error fetching or parsing CSV file:", error));
   }, []);
 
+  const randomizedBackgroundPhotoData = () => {
+    return [...photoData, ...photoBackgroundPythonScript].sort(() => Math.random() - 0.5); // Shuffle the array randomly
+  };
+
   return (
     <main
-      className="bg-repeat bg-[length:512px_512px] h-screen overflow-x-auto overflow-y-hidden"
+      className="bg-repeat bg-[length:512px_512px] h-screen overflow-x-auto"
       style={{background: "#151515"}}
     >
       <div style={{
@@ -34,11 +41,13 @@ export default function Index({globalData}) {
         height: "864px",
         width: "3294px",
         display: "flex",
+        zIndex: 1,
+        pointerEvents: "none",
       }}>
         <MoodLegend/>
         <MoodChart data={moodData}/>
-        {/*<HighlightOptions impact={1}/>*/}
-        <div style={{position: "absolute", top: "250px", left: "42px"}}>
+        {/*<Options impact={1}/>*/}
+        <div style={{position: "absolute", top: "250px", left: "42px", zIndex: 1}}>
           {highlightData.map((highlight, index) => (
             <HighlightContainer
               key={index}
@@ -50,7 +59,8 @@ export default function Index({globalData}) {
           ))}
         </div>
         <MoodSummary data={moodData} />
-        {/*  here I put sections for each month overview */}
+        <PhotoContainer data={randomizedBackgroundPhotoData()} />
+
       </div>
     </main>
   );
