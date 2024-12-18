@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Colors, getMoodColor, moodIcons} from "../MoodLegend";
+import {getMoodColor, moodIcons} from "../MoodLegend";
 import Image from "next/image";
 
 const HighlightContainer = ({imageSrc, text, date, position, mood}) => {

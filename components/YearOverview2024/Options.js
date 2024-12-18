@@ -1,22 +1,37 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {HiOutlinePhoto} from "react-icons/hi2";
+import {Colors} from "./MoodLegend";
 
-const Options = ({impact}) => {
+const Options = ({onIconClick}) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleIconClick = () => {
+    setIsActive(!isActive);
+    if (onIconClick) {
+      onIconClick();
+    }
+  };
+
   const containerStyle = {
     position: 'fixed',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-    background: "#555555",
-    width: '250px',
-    height: '50px',
-    right: 20,
+    filter: 'drop-shadow(1px 1px 2px rgba(0,0,0,0.8))',
+    left: 20,
     bottom: 20,
     zIndex: 999,
+    pointerEvents: 'auto',
   };
 
   return (
     <div
       style={containerStyle}
     >
-      <p>test</p>
+      <HiOutlinePhoto onClick={handleIconClick}
+                      size={30}
+                      color={isActive ? 'white' : Colors.Rad}
+                      style={{
+                        cursor: 'pointer',
+                        transition: 'color 0.3s ease',
+                      }}/>
     </div>
   );
 };

@@ -3,14 +3,13 @@ import {Line} from "react-chartjs-2";
 import {CategoryScale, Chart as ChartJS, LinearScale, LineElement, PointElement, Title} from "chart.js";
 import annotationPlugin from 'chartjs-plugin-annotation';
 import {Colors, getMoodColor} from './MoodLegend';
-import highlightData from './highlights/highlights.json';
 
 ChartJS.register(annotationPlugin, LineElement, PointElement, LinearScale, Title, CategoryScale);
 
 // Add extra lines for highlight dates
-const highlightAnnotations = (data) => data.reduce((annotations, entry, index) => {
+const highlightAnnotations = (data) => data.reduce((annotations, entry) => {
   {
-    highlightData.map((highlight) => {
+    data.map((highlight) => {
       if (highlight.date.includes(entry.date)) {
         annotations.push({
           type: "line",
@@ -54,7 +53,7 @@ const monthlyAnnotations = (data) => data.reduce((annotations, entry, index) => 
   return annotations;
 }, []);
 
-export default function MoodChart({data}) {
+export default function MoodChart({data, highlightData}) {
   // Transform the data for the chart
   const chartData = {
     labels: data.map((entry) => entry.date), // X-axis: dates
@@ -90,10 +89,10 @@ export default function MoodChart({data}) {
     maintainAspectRatio: false,
     scales: {
       x: {
-        position: 'top', // Place the x-axis labels at the top
+        position: 'top',
 
         ticks: {
-          callback: function (val, index) {
+          callback: function (val) {
             const date = new Date(this.getLabelForValue(val));
             if (date.getDate() === 1) {
               return date.toLocaleString('default', {month: 'short'});

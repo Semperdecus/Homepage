@@ -8,12 +8,30 @@
     "mood": 3
   },
   {
+    "date": "2024-01-23",
+    "imageSrc": "/images/2024/highlightFotos/23jan.png",
+    "text": "Ruzie met Deb, no contact met Ting. Masker op. Depri verjaardag, weinig berichten, jankende nachten, negatieve gedachte. Periode niet kunnen werken.",
+    "position": 2,
+    "impact": 5,
+    "mood": 1,
+    "hide": true
+  },
+  {
     "date": "2024-02-09",
     "imageSrc": "/images/2024/highlightFotos/9feb.jpeg",
     "text": "3 dronken dagen carnaval, Lennie, padel",
     "position": 1,
     "impact": 5,
     "mood": 4
+  },
+  {
+    "date": "2024-02-26",
+    "imageSrc": "/images/2024/highlightFotos/26feb.jpeg",
+    "text": "Slecht gesprek met Ting, Sligro release, hele nacht niet geslapen, periode niet gewerkt om weer bovenop te komen. Indy, Lee Wei, Debbie, Jeffrey dierbaar.",
+    "position": 2,
+    "impact": 5,
+    "mood": 1,
+    "hide": true
   },
   {
     "date": "2024-03-08",
@@ -27,15 +45,16 @@
     "date": "2024-03-23",
     "imageSrc": "/images/2024/highlightFotos/23maart.jpeg",
     "text": "Vrijdag game night kantoor, zaterdag met makkers gourmetten, uitgaan, frustraties, verdriet, confusion",
-    "position": 2,
+    "position": 3,
     "impact": 3,
-    "mood": 3
+    "mood": 2,
+    "hide": true
   },
   {
     "date": "2024-03-28",
     "imageSrc": "/images/2024/highlightFotos/28maart.jpeg",
     "text": "Tap takeover woensdag, bijlen werpen donderdag (gewonnen), paaspop vrijdag, veel gezelligheid met veel leuke mensen, Jos die stoer doet",
-    "position": 3,
+    "position": 2,
     "impact": 2,
     "mood": 4
   },
@@ -62,6 +81,15 @@
     "position": 1,
     "impact": 3,
     "mood": 4
+  },
+  {
+    "date": "2024-05-26",
+    "imageSrc": "/images/2024/highlightFotos/doggo.jpg",
+    "text": "Nat geregend, ziekjes, slechte date, week mezelf afgezonderd, telefoon kapot, en dichtbij gekomen om op te geven. Fix: familie, hardlopen, tijd.",
+    "position": 3,
+    "impact": 5,
+    "mood": 1,
+    "hide": true
   },
   {
     "date": "2024-06-15",
@@ -141,7 +169,7 @@
     "text": "Hele leuke Van Moll pubquiz en hand gebroken. Klein dipje achteraf maar snel goed opgepakt.",
     "position": 2,
     "impact": 4,
-    "mood": 3
+    "mood": 2
   },
   {
     "date": "2024-12-12",
