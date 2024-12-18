@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {HiOutlinePhoto} from "react-icons/hi2";
-import {Colors} from "./MoodLegend";
+import {Colors} from "../MoodLegend";
 
 const Options = ({onIconClick}) => {
   const [isActive, setIsActive] = useState(false);

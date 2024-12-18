@@ -10,7 +10,7 @@
   {
     "date": "2024-01-23",
     "imageSrc": "/images/2024/highlightFotos/23jan.png",
-    "text": "Ruzie met Deb, no contact met Ting. Masker op. Depri verjaardag, weinig berichten, jankende nachten, negatieve gedachte. Periode niet kunnen werken.",
+    "text": "\"Ruzie\" met Deb, no contact met Ting. Masker op. Depri verjaardag, weinig berichten, jankende nachten, negatieve gedachte. Periode niet kunnen werken.",
     "position": 2,
     "impact": 5,
     "mood": 1,
@@ -85,7 +85,7 @@
   {
     "date": "2024-05-26",
     "imageSrc": "/images/2024/highlightFotos/doggo.jpg",
-    "text": "Nat geregend, ziekjes, slechte date, week mezelf afgezonderd, telefoon kapot, en dichtbij gekomen om op te geven. Fix: familie, hardlopen, tijd.",
+    "text": "Nat geregend, ziekjes, slechte date, week mezelf afgezonderd, telefoon kapot, opgegeven. Familie, vrienden, hardlopen, tijd, positiviteit.",
     "position": 3,
     "impact": 5,
     "mood": 1,
@@ -154,6 +154,15 @@
     "position": 1,
     "impact": 5,
     "mood": 5
+  },
+  {
+    "date": "2024-11-16",
+    "imageSrc": "/images/2024/highlightFotos/17nov.jpeg",
+    "text": "Feestje deventer, te veel Ting, geslapen & veel nacht paniek in Deventer, mario party, auto pech, Jeffrey bedoelde het goed. Jesse 🤟 en Melissa ❤️.",
+    "position": 3,
+    "impact": 4,
+    "mood": 3,
+    "hide": true
   },
   {
     "date": "2024-11-29",

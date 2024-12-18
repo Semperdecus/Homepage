@@ -11,7 +11,7 @@ import photoBackgroundPythonScript from '../components/YearOverview2024/photoBac
 import HighlightContainer from "../components/YearOverview2024/highlights/HighlightContainer";
 import MoodSummary from "../components/YearOverview2024/MoodSummary";
 import PhotoContainer from "../components/YearOverview2024/photoBackground/PhotoContainer";
-import Options from "../components/YearOverview2024/Options";
+import Options from "../components/YearOverview2024/options/Options";
 
 export default function Index() {
   const [moodData, setMoodData] = useState<{ date: string; moodScore: number }[]>([]);
