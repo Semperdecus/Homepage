@@ -3,15 +3,15 @@ import * as React from 'react';
 import {useEffect, useState} from 'react';
 import {fetchAndParseCsv} from "../utils/csvUtil";
 import {processMoodData} from "../utils/daylioUtil";
-import MoodChart from "../components/YearOverview2024/MoodChart";
-import {MoodLegend} from "../components/YearOverview2024/MoodLegend";
-import highlightDataUnfiltered from '../components/YearOverview2024/highlights/highlights.json';
-import photoData from '../components/YearOverview2024/photoBackground/photos.json';
-import photoBackgroundPythonScript from '../components/YearOverview2024/photoBackground/photoBackground.json';
-import HighlightContainer from "../components/YearOverview2024/highlights/HighlightContainer";
-import MoodSummary from "../components/YearOverview2024/MoodSummary";
-import PhotoContainer from "../components/YearOverview2024/photoBackground/PhotoContainer";
-import Options from "../components/YearOverview2024/options/Options";
+import MoodChart from "../components/YearOverview/MoodChart";
+import {MoodLegend} from "../components/YearOverview/MoodLegend";
+import highlightDataUnfiltered from '../components/YearOverview/highlights/highlights2024.json';
+import photoData from '../components/YearOverview/photoBackground/photos2024.json';
+import photoBackgroundPythonScript from '../components/YearOverview/photoBackground/photoBackground2024.json';
+import HighlightContainer from "../components/YearOverview/highlights/HighlightContainer";
+import MoodSummary from "../components/YearOverview/MoodSummary";
+import PhotoContainer from "../components/YearOverview/photoBackground/PhotoContainer";
+import Options from "../components/YearOverview/options/Options";
 
 export default function Index() {
   const [moodData, setMoodData] = useState<{ date: string; moodScore: number }[]>([]);
@@ -28,7 +28,7 @@ export default function Index() {
       return response;
     })
       .then((parsedData) => {
-        const processedMoodData = processMoodData(parsedData.reverse());
+        const processedMoodData = processMoodData(parsedData.reverse(), 2024);
         setMoodData(processedMoodData); // Store the processed data in state
       })
       .catch((error: any) => console.error("Error fetching or parsing CSV file:", error));
@@ -62,8 +62,6 @@ export default function Index() {
     return [...photoData, ...photoBackgroundPythonScript, ...highlightDataUnfiltered].sort(() => Math.random() - 0.5); // Shuffle the array randomly
   };
 
-  // const highlightData = highlightDataUnfiltered.filter(item => !item.hide);
-
   return (
     <main
       className="bg-repeat bg-[length:512px_512px] h-screen overflow-x-auto"
@@ -81,7 +79,7 @@ export default function Index() {
       }}>
         {!isPhotoBackgroundActive && <MoodLegend />}
         {!isPhotoBackgroundActive && <MoodChart data={moodData} highlightData={highlightData} />}
-        <Options onIconClick={handleIconClick}/>
+        <Options onIconClick={handleIconClick} activeYear={2024}/>
         {!isPhotoBackgroundActive && <div style={{position: "absolute", top: "250px", left: "42px", zIndex: 1}}>
           {highlightData.map((highlight, index) => (
             <HighlightContainer

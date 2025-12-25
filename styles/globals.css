@@ -21,3 +21,32 @@ body {
   width: 30px;
   height: 30px;
 }
+
+@keyframes arrowPulseFade {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-6px);
+  }
+  30% {
+    transform: translateX(4px);
+  }
+  45% {
+    transform: translateX(-6px);
+  }
+  60% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(-6px);
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+}

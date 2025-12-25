@@ -53,10 +53,11 @@ function groupAndAverageMoodScores(filteredData) {
  * Processes the data to filter by year, map mood to scores, and group by date with averages.
  *
  * @param {Array} data - The input array of objects.
+ * @param {number} year - The number of the year we're processing, important apparently
  * @returns {Array} - Processed data with one entry per day and averaged mood scores.
  */
-function processMoodData(data) {
-  const filteredData = filterAndMapData(data);
+function processMoodData(data, year) {
+  const filteredData = filterAndMapData(data, year);
   return groupAndAverageMoodScores(filteredData);
 }
 

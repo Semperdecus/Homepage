@@ -3,9 +3,12 @@ import json
 import re
 from PIL import Image
 
+# Constants
+year = 2025
+
 # Folder paths
-input_folder = 'public/images/2024/photoBackground/drive'
-output_file = 'components/YearOverview2024/photoBackground/photoBackground.json'
+input_folder = f'public/images/{year}/photoBackground/drive'
+output_file = f'components/YearOverview/photoBackground/photoBackground{year}.json'
 
 # Function to extract the date from the filename
 def extract_date_from_filename(filename):
@@ -41,7 +44,7 @@ for filename in os.listdir(input_folder):
         orientation = get_image_orientation(file_path)
 
         # Prepare the image source URL
-        image_src = f"/images/2024/photoBackground/drive/{filename}"
+        image_src = f"/images/{year}/photoBackground/drive/{filename}"
 
         # Append the formatted data to json_data
         json_data.append({
